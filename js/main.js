@@ -95,7 +95,7 @@ function sendMessage(message){
 function updateRoomURL(ipaddr) {
     var url;
     if (!ipaddr) {
-        url = location.href
+        url = window.location.href
     } else {
         url = location.protocol + '//' + ipaddr + ':2013/#' + room
     }
