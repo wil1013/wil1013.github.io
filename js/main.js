@@ -93,12 +93,12 @@ function sendMessage(message){
  * Updates URL on the page so that users can copy&paste it to their peers.
  */
 function updateRoomURL(ipaddr) {
-    var url;
-    if (!ipaddr) {
-        url = window.location.href
-    } else {
-        url = location.protocol + '//' + ipaddr + ':2013/#' + room
-    }
+    var url = window.location.href;
+    // if (!ipaddr) {
+    //     url = window.location.href
+    // } else {
+    //     url = location.protocol + '//' + ipaddr + ':2013/#' + room
+    // }
     roomURL.innerHTML = url;
 }
 
